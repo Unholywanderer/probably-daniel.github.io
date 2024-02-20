@@ -1,0 +1,15 @@
+.test {
+    animation: fadein 0.4s forwards;
+}
+.test:hover {
+    animation: fadeout 0.4s forwards;
+}
+@keyframes fadeout {
+    100% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 1;
+
+    }
+}
