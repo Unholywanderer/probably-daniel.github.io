@@ -1,15 +1,16 @@
-html {
-  height: 100%;
-  width: 100%;
+#skry {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 .dbop {
-	left: 50%;
 	animation: bop 0.189s infinite;
 	animation-delay: 0.759s;
 }
 @keyframes bop {
-	0% { transform: scale(1); }
-	50% { transform: scale(1.15); }
-	75% { transform: scale(1.05); }
-	100% { transform: scale(1); }
+	0% { width: 100%; height: 100%; }
+	50% { width: 120%; height: 120%; }
+	75% { width: 105%; height: 105%; }
+	100% {width: 100%; height: 100%; }
 }
