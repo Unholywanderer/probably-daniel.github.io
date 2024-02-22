@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.dbop {
+	left: 50%;
+	animation: bop 0.189s infinite;
+	animation-delay: 0.759s;
+}
+@keyframes bop {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.15); }
+	75% { transform: scale(1.05); }
+	100% { transform: scale(1); }
+}
