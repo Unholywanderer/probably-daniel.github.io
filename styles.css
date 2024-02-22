@@ -1,3 +1,9 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
 #backdrop {
 	position: absolute;
 	z-index: 1; /* Set a lower z-index value for the backdrop element */
