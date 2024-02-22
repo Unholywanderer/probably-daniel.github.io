@@ -5,23 +5,32 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<!--Add Skry.png-->
-		<img id="skry" class="mid"  src="assets/graphics/skry.png">
-			<script>
-				const audio = new Audio('assets/audio/after_the_storm.mp3');
-				const skry = document.getElementById("skry");
-				const bpm = 79;
-				const crochet = (60 / bpm) * 1000;
-				skry.addEventListener("click", function () {
-					skry.classList.add("dbop");
-					skry.style.animationDuration = crochet + 'ms';
-					skry.style.animationIterationCount = "infinite";
-					audio.play();
-					// print out it work
-					console.log("skry.mp3");
+		<div id="container">
+			<!--Add Skry.png-->
+			<div id="backdrop"></div>
+			<div id="bg"></div>
+			<img id="skry" class="mid"  src="assets/graphics/skry.png">
+				<script>
+					const audio = new Audio('assets/audio/after_the_storm.mp3');
+					const skry = document.getElementById("skry");
+					const bg = document.getElementById("bg");
+					const bpm = 79;
+					const crochet = (60 / bpm) * 1000;
+					skry.addEventListener("click", function () {
+						bg.classList.add("abop");
+						bg.style.animationDuration = crochet*4 + 'ms';
+						bg.style.animationIterationCount = "infinite";
+						
+						skry.classList.add("dbop");
+						skry.style.animationDuration = crochet + 'ms';
+						skry.style.animationIterationCount = "infinite";
+						audio.play();
 
-				});
-			</script>
-		</img>
+						// print out it work
+						console.log("skry.mp3");
+					});
+				</script>
+			</img>
+		</div>
 	</body>
 </html>
